@@ -1,59 +1,29 @@
 const { stat } = require('fs');
 const https = require('https')
 
+const fs = require('fs');
+const readline = require('readline');
+
+// cat README.md | ggrep -oP '\[(.*\/.*)\]' > repos-2021-05-19.txt
+async function processLineByLine() {
+    const fileStream = fs.createReadStream('repos-2021-05-19.txt');
+
+    const rl = readline.createInterface({
+        input: fileStream,
+        crlfDelay: Infinity
+    });
+    let repos = []
+    for await (const line of rl) {
+        repos.push(line)
+    }
+    return repos
+}
+
+
 async function queryAll() {
-    //https://github.com/operator-framework/awesome-operators
-    let repos = [
-        "travelaudience/aerospike-operator",
-        "GoogleCloudPlatform/airflow-operator",
-        "aerogear/android-sdk-operator",
-        "application-runtimes/operator",
-        "appsody/appsody-operator",
-        "aquasecurity/aqua-operator",
-        "arangodb/kube-arangodb",
-        "argoproj/argo-cd",
-        "didil/autobucket-operator",
-        "giantswarm/aws-operator",
-        "aws/aws-controllers-k8s",
-        "aws/amazon-sagemaker-operator-for-k8s",
-        "microsoft/azure-databricks-operator",
-        "apache/camel-k",
-        "datastax/cass-operator",
-        "instaclustr/cassandra-operator",
-        "vgkowski/cassandra-operator",
-        "jetstack/navigator",
-        "Orange-OpenSource/cassandra-k8s-operator",
-        "kudobuilder/operators/cassandra",
-        "containership/cerebral",
-        "jetstack/cert-manager",
-        "eclipse/che-operator",
-        "Altinity/clickhouse-operator",
-        "cloudfoundry/cf-operator",
-        "linki/cloudformation-operator",
-        "eshepelyuk/cmak-operator",
-        "python/consul-operator",
-        "Juniper/contrail-operator",
-        "couchbase/operator",
-        "ibm/couchdb-operator",
-        "nicolai86/couchdb-operator",
-        "Dynatrace/dynatrace-oneagent-operator",
-        "kubic-project/dex-operator",
-        "microdc/k8s-dynamodb-operator",
-        "kloeckner-i/db-operator",
-        "deepfabric/elasticell-operator",
-        "elastic/cloud-on-k8s",
-        "upmc-enterprises/elasticsearch-operator",
-        "jetstack/navigator",
-        "kudobuilder/operators/elastic",
-        "teseraio/ensemble",
-        "solo-io/envoy-operator",
-        "ContainerSolutions/externalsecrets-operator",
-        "coreos/etcd-operator",
-        "lyft/flinkk8soperator",
-        "fluxcd/flux",
-        "fluxcd/helm-operator",
-        "verfio/fortio-operator"
-    ]
+    repos = await processLineByLine();
+    console.log(repos)
+
     let stats = []
     for (const reponame of repos) {
         let stat = await queryRepoStats(reponame)
