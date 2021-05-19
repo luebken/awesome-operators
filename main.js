@@ -62,14 +62,16 @@ async function queryRepoStats(reponame, cb) {
             res.on("end", () => {
                 try {
                     let json = JSON.parse(body);
-                    if (status == 200) { // TODO follow redirect
-                        stats.reponame = reponame
-                        stats.description = json.description
-                        stats.full_name = json.full_name
-                        stats.stargazers_count = json.stargazers_count
-                        stats.watchers_count = json.watchers_count
-                        stats.archived = json.archived
-                        resolve(stats)
+                    if (status == 200) {
+                        if (!json.archived) {
+                            stats.full_name = json.full_name
+                            stats.description = json.description
+                            stats.stargazers_count = json.stargazers_count
+                            resolve(stats)
+                        } else {
+                            console.log(reponame + " archived")
+                            resolve({})
+                        }
                     } else {
                         console.log(reponame + " status " + status)
                         resolve({})
