@@ -63,6 +63,7 @@ async function queryRepoStats(reponame, cb) {
                     let json = JSON.parse(body);
                     if (status == 200) { // TODO follow redirect
                         stats.reponame = reponame
+                        stats.description = json.description
                         stats.full_name = json.full_name
                         stats.stargazers_count = json.stargazers_count
                         stats.watchers_count = json.watchers_count
