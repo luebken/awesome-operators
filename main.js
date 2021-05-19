@@ -1,12 +1,11 @@
-const { stat } = require('fs');
 const https = require('https')
 
 const fs = require('fs');
 const readline = require('readline');
 
-// cat README.md | ggrep -oP '\[(.*\/.*)\]' > repos-2021-05-19.txt
+// cat README.md | ggrep -oP '\[(.*\/.*)\]' > repos.txt
 async function processLineByLine() {
-    const fileStream = fs.createReadStream('repos-2021-05-19.txt');
+    const fileStream = fs.createReadStream('repos.txt');
 
     const rl = readline.createInterface({
         input: fileStream,
@@ -34,7 +33,14 @@ async function queryAll() {
     // sort by stargazers
     stats = stats.sort((a, b) => b.stargazers_count - a.stargazers_count);
 
-    console.log(stats)
+    console.log("\n---")
+    console.log("| Github | Stargazers | Description |")
+    console.log("|--------|------------|-------------|")
+    stats.forEach(stat => {
+        console.log("| [" + stat.full_name + "](https://github.com/" + stat.full_name + ")"
+            + " | " + stat.stargazers_count
+            + " | " + stat.description + " |")
+    });
 }
 
 async function queryRepoStats(reponame, cb) {
@@ -69,7 +75,7 @@ async function queryRepoStats(reponame, cb) {
                             stats.stargazers_count = json.stargazers_count
                             resolve(stats)
                         } else {
-                            console.log(reponame + " archived")
+                            //console.log(reponame + " archived")
                             resolve({})
                         }
                     } else {
