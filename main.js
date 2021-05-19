@@ -31,6 +31,7 @@ async function queryAll() {
     }
     // remove empty
     stats = stats.filter(value => Object.keys(value).length !== 0);
+    // sort by stargazers
     stats = stats.sort((a, b) => b.stargazers_count - a.stargazers_count);
 
     console.log(stats)
