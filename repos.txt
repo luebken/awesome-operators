@@ -142,3 +142,16 @@ practo/k8s-worker-pod-autoscaler
 camunda-community-hub/zeebe-operator
 Nuance-XINFRA/zookeeper-operator
 pravega/zookeeper-operator
+disposab1e/sealed-secrets-operator-helm
+app-sre/dv-operator
+janepelladinesh/postgresql-operator
+movetokube/postgres-operator
+openshift/node-problem-detector-operator
+Hyperfoil/horreum-operator
+Hyperfoil/hyperfoil-operator
+lightbend/console-charts
+maistra/istio-operator
+openshift/hive
+openshift/aws-efs-operator
+tektoncd/operator
+aceeric/nuxeo-operator
