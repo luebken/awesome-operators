@@ -34,12 +34,14 @@ async function queryAll() {
     stats = stats.sort((a, b) => b.stargazers_count - a.stargazers_count);
 
     console.log("\n---")
-    console.log("| Github | Stargazers | Description |")
-    console.log("|--------|------------|-------------|")
+    console.log("| Github | Description | License | Stargazers | Last Update |")
+    console.log("|--------|-------------|---------|------------|-------------|")
     stats.forEach(stat => {
         console.log("| [" + stat.full_name + "](https://github.com/" + stat.full_name + ")"
+            + " | " + stat.description
+            + " | " + stat.license
             + " | " + stat.stargazers_count
-            + " | " + stat.description + " |")
+            + " | " + stat.updated_at.split('T')[0] + " |")
     });
 }
 
@@ -73,6 +75,10 @@ async function queryRepoStats(reponame, cb) {
                             stats.full_name = json.full_name
                             stats.description = json.description
                             stats.stargazers_count = json.stargazers_count
+                            if (json.license)
+                                stats.license = json.license.spdx_id
+                            stats.updated_at = json.updated_at
+
                             resolve(stats)
                         } else {
                             //console.log(reponame + " archived")
