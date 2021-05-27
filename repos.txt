@@ -9,7 +9,7 @@ argoproj/argo-cd
 didil/autobucket-operator
 giantswarm/aws-operator
 aws/amazon-sagemaker-operator-for-k8s
-microsoft/azure-databricks-operator
+azure/azure-databricks-operator
 apache/camel-k
 datastax/cass-operator
 vgkowski/cassandra-operator
@@ -143,7 +143,7 @@ camunda-community-hub/zeebe-operator
 Nuance-XINFRA/zookeeper-operator
 pravega/zookeeper-operator
 disposab1e/sealed-secrets-operator-helm
-app-sre/dv-operator
+app-sre/deployment-validation-operator
 janepelladinesh/postgresql-operator
 movetokube/postgres-operator
 openshift/node-problem-detector-operator
