@@ -158,3 +158,6 @@ aceeric/nuxeo-operator
 googlecloudplatform/elcarro-oracle-operator
 streamnative/function-mesh
 TykTechnologies/tyk-operator
+movetokube/postgres-operator
+minio/operator
+ongres/stackgres
