@@ -1,3 +1,18 @@
+# Awesome Operators in the Wild
+
+This is a fork from https://github.com/operator-framework/awesome-operators
+which has been archived.
+
+Operators are Kubernetes native applications. We define native as being both
+managed using the Kubernetes APIs via kubectl and ran on Kubernetes as
+containers. Operators take advantage of Kubernetes’s extensibility to deliver
+the automation advantages of cloud services like provisioning, scaling, and
+backup/restore while being able to run anywhere that Kubernetes can run.
+
+This list is built by the community. Have you built or are you using an Operator
+that is not listed? Please send a pull request against [repos.txt](repos.txt)
+and we will add that Operator to the list. 
+
 | Github | Description | License | Stargazers | Last Update |
 |--------|-------------|---------|------------|-------------|
 | [rook/rook](https://github.com/rook/rook) | Storage Orchestration for Kubernetes | Apache-2.0 | 8907 | 2021-08-19 |
@@ -155,3 +170,5 @@
 | [janepelladinesh/postgresql-operator](https://github.com/janepelladinesh/postgresql-operator) | null | undefined | 0 | 2019-12-27 |
 | [Hyperfoil/horreum-operator](https://github.com/Hyperfoil/horreum-operator) | Operator managing Horreum instance in Openshift | Apache-2.0 | 0 | 2021-08-05 |
 | [Hyperfoil/hyperfoil-operator](https://github.com/Hyperfoil/hyperfoil-operator) | Operator for installation in Openshift | undefined | 0 | 2021-04-01 |
+
+Last update: 2021-08-19
