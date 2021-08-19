@@ -155,3 +155,6 @@ openshift/hive
 openshift/aws-efs-operator
 tektoncd/operator
 aceeric/nuxeo-operator
+googlecloudplatform/elcarro-oracle-operator
+streamnative/function-mesh
+TykTechnologies/tyk-operator
