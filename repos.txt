@@ -42,7 +42,7 @@ replicatedhq/gatekeeper
 hijak/ghost-operator
 integr8ly/gitea-operator
 paulczar/gcp-cloud-compute-operator
-integr8ly/grafana-operator
+grafana-operator/grafana-operator
 habitat-sh/habitat-operator
 halkyonio/operator
 hazelcast/hazelcast-operator
@@ -75,7 +75,7 @@ Ultimaker/k8s-mongo-operator
 deepinsight/mxnet-operator
 grtl/mysql-operator
 oracle/mysql-operator
-presslabs/mysql-operator
+bitpoke/mysql-operator
 percona/percona-xtradb-cluster-operator
 nats-io/nats-operator
 lukasz-antoniak/neo4j-operator
@@ -137,7 +137,7 @@ dastergon/vegeta-operator
 vmware-tanzu/velero
 VictoriaMetrics/operator
 oracle/weblogic-kubernetes-operator
-presslabs/wordpress-operator
+bitpoke/wordpress-operator
 practo/k8s-worker-pod-autoscaler
 camunda-community-hub/zeebe-operator
 Nuance-XINFRA/zookeeper-operator
