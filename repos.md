@@ -26,9 +26,10 @@
 | [upmc-enterprises/elasticsearch-operator](https://github.com/upmc-enterprises/elasticsearch-operator) | manages elasticsearch clusters | BSD-3-Clause | 662 | 2021-08-17 |
 | [bitpoke/mysql-operator](https://github.com/bitpoke/mysql-operator) | Bulletproof MySQL on Kubernetes using Percona Server | Apache-2.0 | 622 | 2021-08-19 |
 | [Altinity/clickhouse-operator](https://github.com/Altinity/clickhouse-operator) | The ClickHouse Operator creates, configures and manages ClickHouse clusters running on Kubernetes | Apache-2.0 | 614 | 2021-08-19 |
-| [fluxcd/helm-operator](https://github.com/fluxcd/helm-operator) | Successor: https://github.com/fluxcd/helm-controller — The Flux Helm Operator, once upon a time a solution for declarative Helming. | Apache-2.0 | 608 | 2021-08-18 |
+| [fluxcd/helm-operator](https://github.com/fluxcd/helm-operator) | Successor: https://github.com/fluxcd/helm-controller ��� The Flux Helm Operator, once upon a time a solution for declarative Helming. | Apache-2.0 | 608 | 2021-08-18 |
 | [apache/camel-k](https://github.com/apache/camel-k) | Apache Camel K is a lightweight integration platform, born on Kubernetes, with serverless superpowers | Apache-2.0 | 600 | 2021-08-19 |
 | [banzaicloud/kafka-operator](https://github.com/banzaicloud/kafka-operator) | Oh no! Yet another Kafka operator for Kubernetes | Apache-2.0 | 543 | 2021-08-19 |
+| [minio/operator](https://github.com/minio/operator) | MinIO Operator creates/configures/manages MinIO clusters on Kubernetes | AGPL-3.0 | 503 | 2021-08-19 |
 | [nats-io/nats-operator](https://github.com/nats-io/nats-operator) | NATS Operator | Apache-2.0 | 502 | 2021-08-10 |
 | [banzaicloud/istio-operator](https://github.com/banzaicloud/istio-operator) | An operator that manages Istio deployments on Kubernetes | Apache-2.0 | 501 | 2021-08-11 |
 | [kubedb/operator](https://github.com/kubedb/operator) | KubeDB Operator | NOASSERTION | 433 | 2021-08-18 |
@@ -76,6 +77,7 @@
 | [linki/cloudformation-operator](https://github.com/linki/cloudformation-operator) | A Kubernetes operator for managing CloudFormation stacks via a CustomResource | MIT | 94 | 2021-08-03 |
 | [Azure/azure-databricks-operator](https://github.com/Azure/azure-databricks-operator) | Kubernetes Operator for Databricks | MIT | 92 | 2021-08-04 |
 | [upmc-enterprises/kong-operator](https://github.com/upmc-enterprises/kong-operator) | manages kong clusters | BSD-3-Clause | 87 | 2021-06-04 |
+| [ongres/stackgres](https://github.com/ongres/stackgres) | StackGres Operator, Full Stack PostgreSQL on Kubernetes // !! Mirror repository of https://gitlab.com/ongresinc/stackgres, only accept Merge Requests there. | AGPL-3.0 | 81 | 2021-08-19 |
 | [Dynatrace/dynatrace-oneagent-operator](https://github.com/Dynatrace/dynatrace-oneagent-operator) | Kubernetes/Openshift Operator for managing Dynatrace OneAgent deployments | Apache-2.0 | 78 | 2021-08-12 |
 | [amaizfinance/secreter](https://github.com/amaizfinance/secreter) | Kubernetes operator and CLI tool for encrypting and managing Kubernetes secrets | Apache-2.0 | 68 | 2021-08-11 |
 | [maistra/istio-operator](https://github.com/maistra/istio-operator) | null | Apache-2.0 | 67 | 2021-08-18 |
@@ -100,6 +102,7 @@
 | [piontec/netperf-operator](https://github.com/piontec/netperf-operator) | Kubernetes operator to measure TCP transmission speed between 2 pods | Apache-2.0 | 37 | 2021-05-27 |
 | [application-stacks/runtime-component-operator](https://github.com/application-stacks/runtime-component-operator) | A generic Operator capable of deploying any runtime component image with enterprise QoS and bind it to other services | Apache-2.0 | 35 | 2021-08-18 |
 | [falarica/steerd-presto-operator](https://github.com/falarica/steerd-presto-operator) | Kubernetes (K8s) Operator for PrestoDB | Apache-2.0 | 34 | 2021-08-15 |
+| [movetokube/postgres-operator](https://github.com/movetokube/postgres-operator) | PostgreSQL operator for Kubernetes | MIT | 34 | 2021-08-08 |
 | [movetokube/postgres-operator](https://github.com/movetokube/postgres-operator) | PostgreSQL operator for Kubernetes | MIT | 34 | 2021-08-08 |
 | [pravega/pravega-operator](https://github.com/pravega/pravega-operator) | Pravega Kubernetes Operator | Apache-2.0 | 33 | 2021-08-17 |
 | [verfio/fortio-operator](https://github.com/verfio/fortio-operator) | Load Testing Operator within the Kubernetes cluster and outside of it. | Apache-2.0 | 29 | 2021-07-15 |
