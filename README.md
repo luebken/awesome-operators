@@ -1,4 +1,9 @@
-# Awesome Operators in the Wild
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Warning.svg/156px-Warning.svg.png)
+
+## Repository is obsolete
+This repository has been archived in favor of [operatorhub.io](https://operatorhub.io).
+
+### Awesome Operators in the Wild
 
 Operators are Kubernetes native applications. We define native as being both managed using the Kubernetes APIs via kubectl and ran on Kubernetes as containers. Operators take advantage of Kubernetes’s extensibility to deliver the automation advantages of cloud services like provisioning, scaling, and backup/restore while being able to run anywhere that Kubernetes can run.
 
@@ -57,6 +62,7 @@ If you want to start building an Operator, you should definitely look into the [
 | Flux | [fluxcd/flux](https://github.com/fluxcd/flux) | The GitOps Kubernetes Operator. |
 | Flux Helm Operator | [fluxcd/helm-operator](https://github.com/fluxcd/helm-operator) | Manage Helm releases using `HelmRelease` resources. |
 | Fortio-operator | [verfio/fortio-operator](https://github.com/verfio/fortio-operator) | Load Testing Operator within the Kubernetes cluster and outside of it. |
+| Function Mesh | [streamnative/function-mesh](https://github.com/streamnative/function-mesh) | [Function Mesh](https://functionmesh.io/) is a serverless framework purpose-built for stream processing applications. It brings powerful event-streaming capabilities to your applications by orchestrating multiple [Pulsar Functions](http://pulsar.apache.org/docs/en/next/functions-overview/) and [Pulsar IO connectors](http://pulsar.apache.org/docs/en/next/io-overview/) for complex stream processing jobs on Kubernetes. |
 | Galera Operator | [Orange-OpenSource/galera-operator](https://github.com/Orange-OpenSource/galera-operator) | Galera Operator makes it easy to manage highly-available galera clusters deployed to Kubernetes and automates tasks related to operating a galera cluster. |
 | GateKeeper | [replicatedhq/gatekeeper](https://github.com/replicatedhq/gatekeeper) | Manages dynamic Admission Controllers using Open Policy Agent. |
 | Ghost Operator | [hijak/ghost-operator](https://github.com/hijak/ghost-operator) | Installs a [Ghost Blog](https://ghost.org/) instance |
@@ -111,7 +117,8 @@ If you want to start building an Operator, you should definitely look into the [
 | OpenFaaS | [openfaas-incubator/openfaas-operator](https://github.com/openfaas-incubator/openfaas-operator) | An operator for [OpenFaaS](https://www.openfaas.com/) functions. |
 | OpenStack Seeder | [sapcc/kubernetes-operators](https://github.com/sapcc/kubernetes-operators/tree/master/openstack-seeder) | Seed your OpenStack content with a this operator. |
 | Open Liberty | [OpenLiberty/open-liberty-operator](https://github.com/OpenLiberty/open-liberty-operator) | An Operator for deploying Open Liberty application containers into Kubernetes. |
-| Oracle Database | [malagoli/oracle-db-operator](https://github.com/malagoli/oracle-db-operator) | Prototype of an Oracle Database operator. |
+| Oracle Database #1 | [malagoli/oracle-db-operator](https://github.com/malagoli/oracle-db-operator) | Prototype of an Oracle Database operator. |
+| Oracle Database #2 | [googlecloudplatform/elcarro-oracle-operator](https://github.com/GoogleCloudPlatform/elcarro-oracle-operator) | Provision and manage your Oracle Databases on Kubernetes. Works with both Express Edition (XE) and Enterprise Edition (EE).  |
 | opssight-connector | [blackducksoftware/opssight-connector](https://github.com/blackducksoftware/opssight-connector) | The Black Duck OpsSight Connector provides software composition analysis of open-source components of containers. |
 | PostgreSQL #1 | [CrunchyData/postgres-operator](https://github.com/CrunchyData/postgres-operator) | PostgreSQL Operator Creates/Configures/Manages PostgreSQL Clusters on Kubernetes |
 | PostgreSQL #2 | [zalando-incubator/postgres-operator](https://github.com/zalando-incubator/postgres-operator) | Create and manage PostgreSQL HA clusters on Kubernetes using [Patroni](https://github.com/zalando/patroni) |
@@ -157,6 +164,7 @@ If you want to start building an Operator, you should definitely look into the [
 | TiDB #1 (Official) | [pingcap/tidb-operator](https://github.com/pingcap/tidb-operator) | TiDB operator creates and manages TiDB clusters running in Kubernetes. |
 | TiDB #2 | [aliyx/tidb-operator](https://github.com/aliyx/tidb-operator) | TiDB operator creates/configures/manages TiDB clusters atop Kubernetes. |
 | Tomcat | [kube-incubator/tomcat-operator](https://github.com/kube-incubator/tomcat-operator) | Tomcat operator creates/manages Tomcat clusters atop Kubernetes. It is also a good operator for learning puposes, as the code base is pretty small. |
+| Tyk API Gateway | [TykTechnologies/tyk-operator](https://github.com/TykTechnologies/tyk-operator) | GitOps enabled Full-Lifecycle API Management. CRDs and controllers for managing APIs, Security Policies & Publishing to a developer portal or service catalogue. Compatible with Open Source, On Premises, or SaaS installations. |
 | Unifiedpush | [aerogear/ups-config-operator](https://github.com/aerogear/ups-config-operator) | UnifiedPush Server is a server that allows sending push notifications to different (mobile) platforms. Using this operator manage your Unifiedpush variants from Kubernetes and Openshift |
 | Vault #1 | [coreos/vault-operator](https://github.com/coreos/vault-operator) | This operator will run and manage Vault on Kubernetes simply and securely. |
 | Vault #2  | [banzaicloud/bank-vaults](https://github.com/banzaicloud/bank-vaults)| This operator offers a feature rich HA Vault operator with TLS, external API based re/configuration, several/automatic unseal options and more.|
